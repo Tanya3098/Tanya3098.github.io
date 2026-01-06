@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Latest Results | Career Connect</title>
+
+<style>
+/* ===== GLOBAL ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f4f8;
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+.header{
+    background:#000;
+    color:#fff;
+    padding:15px 40px;
+}
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+.logo span{
+    display:block;
+    font-size:12px;
+    color:#ccc;
+}
+
+/* ===== NAV ===== */
+.nav{
+    background:#111;
+    padding:12px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+.nav a{
+    color:#ffdede;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:16px;
+}
+.nav a:hover{
+    color:#00e5ff;
+}
+
+/* ===== PAGE TITLE ===== */
+.page-title{
+    background:linear-gradient(to right,#ffb347,#ffcc33);
+    padding:50px 20px;
+    text-align:center;
+}
+.page-title h1{
+    font-size:40px;
+}
+.page-title p{
+    margin-top:10px;
+    font-size:17px;
+}
+
+/* ===== STATS ===== */
+.stats{
+    max-width:1000px;
+    margin:35px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+    padding:0 15px;
+}
+.stat{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+.stat h2{
+    color:#008b8b;
+    font-size:30px;
+}
+
+/* ===== NOTICE ===== */
+.notice{
+    max-width:1000px;
+    margin:20px auto;
+    background:#fff3cd;
+    border-left:5px solid #ff9800;
+    padding:15px;
+    font-weight:bold;
+    color:#7a5200;
+}
+
+/* ===== WRAPPER ===== */
+.wrapper{
+    max-width:1100px;
+    margin:40px auto;
+    padding:15px;
+}
+
+/* ===== CARD ===== */
+.card{
+    background:#fff;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.card h2{
+    margin-bottom:15px;
+    color:#008b8b;
+}
+
+/* ===== TABLE ===== */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th, td{
+    padding:14px;
+    border:1px solid #ddd;
+}
+th{
+    background:#000;
+    color:#fff;
+}
+tr:nth-child(even){
+    background:#f9f9f9;
+}
+.new{
+    background:red;
+    color:#fff;
+    padding:3px 7px;
+    border-radius:4px;
+    font-size:12px;
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    margin-right:5px;
+}
+.view{background:#008b8b;}
+.download{background:#6a1b9a;}
+.cutoff{background:#d84315;}
+.btn:hover{opacity:0.85;}
+
+/* ===== LIST ===== */
+ul{
+    margin-left:20px;
+}
+ul li{
+    margin:8px 0;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:700px){
+    table{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">CAREER CONNECT <span>FUTURE AWAITS</span></div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+    <a href="home.html">Home</a>
+    <a href="latest-result-extended.html">Latest Result</a>
+    <a href="#">Admit Card</a>
+    <a href="#">Answer Key</a>
+    <a href="#">Admission</a>
+</div>
+
+<!-- TITLE -->
+<div class="page-title">
+    <h1>Latest Government Exam Results</h1>
+    <p>Fastest & Trusted Updates of All Sarkari Results</p>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+    <div class="stat"><h2>125+</h2><p>Total Results</p></div>
+    <div class="stat"><h2>32</h2><p>New This Month</p></div>
+    <div class="stat"><h2>18</h2><p>Central Govt</p></div>
+    <div class="stat"><h2>14</h2><p>State Govt</p></div>
+</div>
+
+<!-- NOTICE -->
+<div class="notice">
+📢 Candidates are advised to verify results only from official websites.
+Career Connect provides information for guidance only.
+</div>
+
+<div class="wrapper">
+
+<!-- ABOUT -->
+<div class="card">
+<h2>About Latest Results</h2>
+<p>
+Career Connect provides fast and accurate information about
+government exam results including UPSC, SSC, Railway, Defence,
+Teaching, Banking and State Government exams.
+</p>
+</div>
+
+<!-- RESULT TABLE -->
+<div class="card">
+<h2>Latest Result Updates</h2>
+
+<table>
+<tr>
+    <th>Exam</th>
+    <th>Post</th>
+    <th>Result Type</th>
+    <th>Date</th>
+    <th>Action</th>
+</tr>
+
+<tr>
+    <td>UPSC NDA 2025 <span class="new">NEW</span></td>
+    <td>NDA & NA</td>
+    <td>Written Exam</td>
+    <td>10 Jan 2026</td>
+    <td>
+        <a class="btn view" href="#">View</a>
+        <a class="btn download" href="#">Download</a>
+    </td>
+</tr>
+
+<tr>
+    <td>SSC GD Constable</td>
+    <td>Constable</td>
+    <td>CBT Result</td>
+    <td>08 Jan 2026</td>
+    <td>
+        <a class="btn view" href="#">View</a>
+        <a class="btn cutoff" href="#">Cut-Off</a>
+    </td>
+</tr>
+
+<tr>
+    <td>RRB NTPC</td>
+    <td>Graduate Level</td>
+    <td>Stage-1</td>
+    <td>05 Jan 2026</td>
+    <td>
+        <a class="btn view" href="#">View</a>
+    </td>
+</tr>
+
+<tr>
+    <td>CTET Dec 2025</td>
+    <td>Paper I & II</td>
+    <td>Score Card</td>
+    <td>28 Dec 2025</td>
+    <td>
+        <a class="btn download" href="#">Download</a>
+    </td>
+</tr>
+
+</table>
+</div>
+
+<!-- HOW TO CHECK -->
+<div class="card">
+<h2>How to Check Result</h2>
+<ul>
+    <li>Visit official exam website</li>
+    <li>Open Result / Scorecard link</li>
+    <li>Enter Roll Number / DOB</li>
+    <li>Download and save result</li>
+</ul>
+</div>
+
+<!-- IMPORTANT -->
+<div class="card">
+<h2>Important Instructions</h2>
+<ul>
+    <li>Check details carefully on result</li>
+    <li>Save scorecard for next stage</li>
+    <li>Follow official notifications only</li>
+</ul>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+© 2026 Career Connect | All Rights Reserved<br>
+Disclaimer: This is not an official government website.
+</div>
+
+</body>
+</html>
