@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admit Card | Career Connect</title>
+
+<style>
+/* ===== HEADER ===== */
+header {
+    background: #000;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h2 {
+    color: #00caca;
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00caca;
+}
+
+/* ===== ADMIT CARD SECTION ===== */
+.admit-main {
+    padding: 40px 20px;
+    background: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.admit-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admit-header h1 {
+    font-size: 36px;
+    color: #008b8b;
+}
+
+.admit-header p {
+    color: #555;
+}
+
+.admit-notice {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.admit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.admit-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.admit-card:hover {
+    transform: translateY(-8px);
+}
+
+.admit-card h3 {
+    margin-bottom: 10px;
+}
+
+.admit-card p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.soon {
+    color: orange;
+    font-weight: bold;
+}
+
+.admit-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background: #008b8b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.admit-card a:hover {
+    background: #005f5f;
+}
+
+.disabled {
+    background: gray;
+    pointer-events: none;
+}
+
+/* ===== EXTRA INFO ===== */
+.extra-info {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.extra-info h2 {
+    color: #008b8b;
+    margin-bottom: 15px;
+}
+
+.extra-info ul li {
+    margin: 8px 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h2>Career Connect</h2>
+    <nav>
+        <a href="careerconnect.html">Home</a>
+        <a href="#">Latest Jobs</a>
+        <a href="#">Results</a>
+        <a href="#">Admit Card</a>
+        <a href="#">Answer Key</a>
+        <a href="#">Admission</a>
+    </nav>
+</header>
+
+<!-- ===== ADMIT CARD CONTENT ===== -->
+<section class="admit-main">
+
+    <div class="admit-header">
+        <h1>Download Admit Card</h1>
+        <p>India’s trusted government exam admit card portal</p>
+    </div>
+
+    <div class="admit-notice">
+        <marquee>⚠️ Admit Card + Original ID Proof is mandatory for exam entry</marquee>
+    </div>
+
+    <div class="admit-grid">
+
+        <div class="admit-card">
+            <h3>UPSC CDS 2026</h3>
+            <p>Exam Date: April 2026</p>
+            <p>Exam City: Mentioned on Admit Card</p>
+            <p>Status: <span class="available">Available</span></p>
+            <a href="#">Download Admit Card</a>
+        </div>
+
+        <div class="admit-card">
+            <h3>UPSC NDA 2026</h3>
+            <p>Exam Date: May 2026</p>
+            <p>Shift: Morning</p>
+            <p>Status: <span class="available">Available</span></p>
+            <a href="#">Download Admit Card</a>
+        </div>
+
+        <div class="admit-card">
+            <h3>SSC GD Constable</h3>
+            <p>Exam Date: March 2026</p>
+            <p>CBT Mode</p>
+            <p>Status: <span class="available">Available</span></p>
+            <a href="#">Download Admit Card</a>
+        </div>
+
+        <div class="admit-card">
+            <h3>RRB Group D 2025</h3>
+            <p>Exam Date: Feb 2025</p>
+            <p>Shift: As per Admit Card</p>
+            <p>Status: <span class="available">Available</span></p>
+            <a href="#">Download Admit Card</a>
+        </div>
+
+        <div class="admit-card">
+            <h3>CTET Feb 2026</h3>
+            <p>Paper I & II</p>
+            <p>Status: <span class="available">Available</span></p>
+            <a href="#">Download Admit Card</a>
+        </div>
+
+        <div class="admit-card">
+            <h3>DRDO CEPTAM 11</h3>
+            <p>Exam Date: Jan 2026</p>
+            <p>Status: <span class="soon">Coming Soon</span></p>
+            <a href="#" class="disabled">Not Released</a>
+        </div>
+
+    </div>
+
+    <!-- ===== EXTRA INFORMATION ===== -->
+    <div class="extra-info">
+        <h2>Important Instructions</h2>
+        <ul>
+            <li>Carry 2 copies of printed admit card</li>
+            <li>Original Aadhaar / Voter ID / PAN required</li>
+            <li>Reach exam center 60 minutes early</li>
+            <li>No mobile, smartwatch, calculator allowed</li>
+            <li>Follow COVID or exam authority guidelines</li>
+        </ul>
+
+        <h2>Help & Support</h2>
+        <ul>
+            <li>If admit card not opening – clear browser cache</li>
+            <li>Check application number & DOB carefully</li>
+            <li>Contact official exam authority for errors</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    <p>© 2026 Career Connect</p>
+    <p>This is not an official government website</p>
+</footer>
+
+</body>
+</html>
