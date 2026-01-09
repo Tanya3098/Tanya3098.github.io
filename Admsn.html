@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission | Career Connect</title>
+
+<style>
+/* ===== BASE ===== */
+body{
+    margin:0;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    background:#f4f6f9;
+}
+
+/* ===== HEADER ===== */
+.site-header{ background:#000; color:#fff; }
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    flex-wrap:wrap;
+}
+
+.logo{ display:flex; align-items:center; gap:10px; }
+.logo img{ width:40px; }
+.logo h2{ margin:0; color:#00e5e5; }
+.logo span{ font-size:12px; color:#ccc; }
+
+.search-box input{
+    padding:7px 15px;
+    border-radius:20px;
+    border:none;
+    width:220px;
+}
+
+.nav-bar{
+    background:#111;
+    text-align:center;
+    padding:10px 0;
+}
+
+.nav-bar a{
+    color:#fff;
+    text-decoration:none;
+    margin:5px 12px;
+    font-size:14px;
+    font-weight:600;
+    display:inline-block;
+}
+
+.nav-bar a:hover,
+.nav-bar .active{ color:#00e5e5; }
+
+/* ===== BANNER ===== */
+.banner{
+    background:linear-gradient(120deg,#1e88e5,#42a5f5);
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.banner h1{ margin:0; font-size:38px; }
+.banner p{ margin-top:10px; }
+
+/* ===== UPDATES ===== */
+.updates{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.updates h2{
+    text-align:center;
+    color:#1e88e5;
+    margin-bottom:25px;
+}
+
+.update-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.update-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.update-card:hover{ transform:translateY(-6px); }
+
+.update-card img{ width:60px; margin-bottom:15px; }
+
+.update-card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 18px;
+    background:#1e88e5;
+    color:#fff;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:bold;
+}
+
+/* ===== PROCESS ===== */
+.process{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    text-align:center;
+}
+
+.process h2{ color:#1e88e5; margin-bottom:30px; }
+
+.process-flow{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.step{
+    background:#fff;
+    padding:20px;
+    width:150px;
+    border-radius:15px;
+    box-shadow:0 6px 14px rgba(0,0,0,0.15);
+    font-weight:bold;
+}
+
+/* ===== TABLE SECTIONS ===== */
+.table-section{
+    width:90%;
+    max-width:1100px;
+    margin:50px auto;
+}
+
+.table-section h2{
+    text-align:center;
+    color:#1e88e5;
+    margin-bottom:20px;
+}
+
+.table-wrap{ overflow-x:auto; }
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+th{ background:#1e88e5; color:#fff; }
+tr:hover{ background:#f1f7ff; }
+
+/* ===== INFO ===== */
+.info{
+    background:#fff;
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.info h2{ color:#1e88e5; }
+
+/* ===== FOOTER ===== */
+.footer{
+    background:#000;
+    color:#bbb;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    .banner h1{ font-size:28px; }
+    .search-box input{ width:100%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+    <div class="top-bar">
+        <div class="logo">
+            <img src="https://img.icons8.com/color/48/briefcase.png">
+            <div>
+                <h2>CAREER CONNECT</h2>
+                <span>Future Awaits</span>
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search Admissions">
+        </div>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="careerconnect.html">Home</a>
+        <a href="#">Latest Jobs</a>
+        <a href="#">Results</a>
+        <a href="#">Admit Card</a>
+        <a href="#">Answer Key</a>
+        <a class="active" href="#">Admission</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<!-- BANNER -->
+<div class="banner">
+    <h1>Admissions Open</h1>
+    <p>Latest government & academic admission notifications</p>
+</div>
+
+<!-- UPDATES -->
+<section class="updates">
+<h2>Latest Admission Updates</h2>
+<div class="update-grid">
+    <div class="update-card">
+        <img src="https://img.icons8.com/color/96/university.png">
+        <h3>UP Polytechnic 2026</h3>
+        <p>Diploma courses admission.</p>
+        <a href="#">Apply Now</a>
+    </div>
+    <div class="update-card">
+        <img src="https://img.icons8.com/color/96/student-male.png">
+        <h3>ITI Admission 2026</h3>
+        <p>State-wise ITI admission.</p>
+        <a href="#">View Details</a>
+    </div>
+    <div class="update-card">
+        <img src="https://img.icons8.com/color/96/school.png">
+        <h3>Navodaya Admission</h3>
+        <p>Class 6 & 9 entrance.</p>
+        <a href="#">Check Notice</a>
+    </div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+<h2>Admission Process</h2>
+<div class="process-flow">
+    <div class="step">1️⃣ Check Notice</div>
+    <div class="step">2️⃣ Register Online</div>
+    <div class="step">3️⃣ Upload Documents</div>
+    <div class="step">4️⃣ Pay Fee</div>
+    <div class="step">5️⃣ Merit / Exam</div>
+    <div class="step">6️⃣ Final Admission</div>
+</div>
+</section>
+
+<!-- IMPORTANT DATES -->
+<section class="table-section">
+<h2>Important Dates</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Event</th><th>Date</th></tr>
+<tr><td>Registration Start</td><td>10 Jan 2026</td></tr>
+<tr><td>Last Date</td><td>15 Feb 2026</td></tr>
+<tr><td>Entrance Exam</td><td>April 2026</td></tr>
+<tr><td>Merit List</td><td>May 2026</td></tr>
+</table>
+</div>
+</section>
+
+<!-- ELIGIBILITY -->
+<section class="table-section">
+<h2>Eligibility Criteria</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Course</th><th>Qualification</th><th>Age</th></tr>
+<tr><td>ITI</td><td>10th Pass</td><td>14–40</td></tr>
+<tr><td>Polytechnic</td><td>10th / 12th</td><td>14–25</td></tr>
+<tr><td>UG</td><td>12th Pass</td><td>As per rule</td></tr>
+</table>
+</div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="table-section">
+<h2>Documents Required</h2>
+<div class="table-wrap">
+<table>
+<tr><th>Document</th><th>Status</th></tr>
+<tr><td>Marksheet</td><td>Required</td></tr>
+<tr><td>Aadhar Card</td><td>Required</td></tr>
+<tr><td>Photo & Signature</td><td>Required</td></tr>
+<tr><td>Caste Certificate</td><td>If Applicable</td></tr>
+</table>
+</div>
+</section>
+
+<!-- INFO -->
+<div class="info">
+<h2>Why Career Connect?</h2>
+<ul>
+    <li>✔ Verified admission updates</li>
+    <li>✔ Easy application links</li>
+    <li>✔ Step-by-step guidance</li>
+    <li>✔ Mobile-friendly platform</li>
+</ul>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>© 2026 Career Connect | All Rights Reserved</p>
+    <p>This is not an official government website</p>
+</div>
+
+</body>
+</html>
